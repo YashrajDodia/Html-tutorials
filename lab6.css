@@ -8,6 +8,7 @@
 
 
 .buttons{
+	
 	float: right;
 	background-color: white;
 	color: blue;
@@ -19,7 +20,7 @@
 .subdiv{
 	background-color: cyan;
 	width: 100%;
-	height: 500px;
+	height: 490px;
 }
 
 .sidebar{
@@ -35,19 +36,28 @@
 .image1{
 	padding-top: 10px;
 	text-align: center;
-	margin-left: 5px;
+	
 	width: 10%;
 	float: left;
 }
 .partition{
+	height: 10vh;
+	border: solid cyan;
 	padding-top: 50px;
 	background-color: cyan;
 	width: 100%;
 }
 .student{
-	
-	padding-top: 150px;
-	text-align: center;
-	margin-left: 10px;
+    border: solid cyan;
+    text-align: center;
+	margin-left: 38px;
 	float: left;
+}
+.footer{
+	background-color: darkblue;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	float: left;
+	width: 100%;
 }
