@@ -1,0 +1,56 @@
+
+
+.backgrd{
+	width: 100%;
+	background-color : lightblue;
+	padding-top: 10px;
+    padding-left: 5px;
+	float: left;
+}
+
+
+.div2{
+	width: 99%;
+    background-color : purple;
+    float: left;
+    margin-left: 5px;	
+}
+
+.mback{
+	 background-color : orange;
+	 width: 99%;
+	 float: left;
+	 padding-bottom: 20px;
+	 margin-left: 5px;
+}
+
+.du{
+	background-color: blue;
+	width: 99%;
+	float: left;
+	color: white;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.entry{
+	background-color: black;
+	font: left;
+	color: white;
+	width: 40%;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+.sbar{
+	background-color: black;
+	font: left;
+	color: white;
+	width: 30%;
+	height: 90px;
+	margin-right: 5px;
+	float: right;
+	margin-top: 15px;
+   padding-bottom: 15px;
+}
