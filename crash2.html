@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			border: 2px solid black;
+			height: 90vh;
+		}
+		.sky{
+			height: 100%;
+			width: 100%;
+			background-color: lightblue;
+		}
+		.b1{
+			position: absolute;
+			top: 100px;
+			left: 500px;
+			z-index: 1;
+		}
+		.b2{
+			position: absolute;
+			top: 100px;
+			left: 950px;
+			z-index: 1;
+		}
+		.plane{
+			position: relative;
+			float: left;
+			margin-top: 200px;
+			animation-name: crashh;
+			animation-duration: 5s;
+			animation-iteration-count: 1;
+			z-index: 2;
+		}
+
+		@keyframes crashh{
+			0%{left: 0px; top: 50px;}
+			25%{left: 300px; top: 50px;}
+			50%{left: 600px; top: 50px;}
+			75%{left: 900px; top: 50px;}
+			100%{left: 1190px; top: 50px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="sky">
+		<div class="b1">
+			<img src="https://images.unsplash.com/photo-1508834826823-bd913e0a829b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2luZ2xlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D" height="300px" width="250px">
+		</div>
+		<div class="b2">
+			<img src="https://images.unsplash.com/photo-1508834826823-bd913e0a829b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2luZ2xlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D" height="300px" width="250px">
+		</div>
+		<div class="plane">
+			<img src="https://img.freepik.com/premium-photo/view-big-white-flying-plane-blue-sky-clouds-background_104337-7939.jpg" height="100px" width="175px">
+		</div>
+		</div>
+	</div>
+</body>
+</html>
