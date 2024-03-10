@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			height: 90vh;
+			border : 2px solid black;
+		}
+		.mdiv{
+			height: 10%;
+			width: 100%;
+			background-color: red;
+		}
+		.options{
+			display: inline-block;
+			position: relative;
+			color: white;
+			font-size: 20px;
+			text-align: center;
+			margin-right: 70px;
+			margin-left: 10px;
+			height: 100%;
+			cursor: pointer;
+		}
+
+		.options:hover{
+			background-color: purple;
+		}
+
+		.dep{
+			display: none;
+			min-width: 150px;
+			background-color: lightgray;
+			color: black;
+			font-size: 15px;
+			position: relative;
+			top: 34px;
+		}
+
+		.dep:hover{
+			background-color: gray;
+		}
+
+		#adep:hover .dep{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="options">Home</div>
+		<div class="options" id="adep">
+			About departments
+			<div class="dep">CSE</div>
+			<div class="dep">EC</div>
+			<div class="dep">Mechanical</div>
+			<div class="dep">Civil</div>
+		</div>
+		<div class="options">Placements</div>
+		<div class="options">Contact Us</div>
+	</div>
+</body>
+</html>
