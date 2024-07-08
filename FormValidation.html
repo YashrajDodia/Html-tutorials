@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text" id="uname" placeholder="enter username"/>
+    <input type = "text" id="pword" placeholder="enter password"/>
+    <input type = "text" id="rpword" placeholder="re-enter username"/>
+    <input type = "number" id="age" placeholder="enter age"/>
+    <button onclick="validateForm()">Submit</button>
+
+    <script>
+
+        function validateForm(){
+            var uname = document.getElementById("uname").value;
+            var pword = document.getElementById("pword").value;
+            var rpword = document.getElementById("rpword").value;
+            var age = document.getElementById("age").value;
+            if(uname.length<8){
+                alert("Username length is invalid !");
+            }
+
+            if(age<18){
+                alert("Invalid age!");
+            }
+
+            let pattern = "(?=.*([0,9])(?=.*[!@#$%&])[a-zA-Z]{8,12}"
+            var regx = new RegExp(pattern)
+            if(!regx.test(pword)){
+                alert("Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters");
+                if(pword.localeCompare(rpword)){
+                    alert("re-enterd password didn't matched");
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

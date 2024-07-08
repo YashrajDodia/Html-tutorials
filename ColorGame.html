@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 5px;
+    }
+    #b1{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border: 2px solid black;
+    }
+    #b2{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: green;
+    }
+    #b3{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: yellow;
+    }
+    #b4{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: purple;
+    }
+    #b5{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+    }
+</style>
+<body>
+    <h1>G color joto hoi ne eni upar click kar batu....</h1>
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    <div id="b5"></div>
+    <button id="rbtn">Click to reset</button>
+
+    <script>
+        document.getElementById('b1').addEventListener('click' , ()=>{
+            document.body.style.backgroundColor = "red";
+        })
+        document.getElementById('b2').addEventListener('click' , ()=>{
+            document.body.style.backgroundColor = "green";
+        })
+        document.getElementById('b3').addEventListener('click' , ()=>{
+            document.body.style.backgroundColor = "yellow";
+        })
+        document.getElementById('b4').addEventListener('click' , ()=>{
+            document.body.style.backgroundColor = "purple";
+        })
+        document.getElementById('b5').addEventListener('click' , ()=>{
+            document.body.style.backgroundColor = "pink";
+        })
+        document.getElementById('rbtn').addEventListener('click' , ()=>{
+            document.body.style.backgroundColor = "white";
+        })
+    </script>
+</body>
+</html>

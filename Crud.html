@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <input type = "text" id="name">
+    <input type = "text" id="rollno">
+    <button id="addButton" onclick="add()">Add</button>
+    <div id="dis"></div>
+    <script>
+      a = [
+        {
+          name : "Yashraj",
+          rollno : 101
+        },{
+          name : "Prince",
+          rollno : 102
+        },{
+          name : "Prem",
+          rollno : 103
+        }
+      ]
+      function display(){
+        htmltext = ""
+        htmltext += '<table border = "1">'
+          for (i = 0; i < a.length; i++) {
+            htmltext += '<tr>'
+              htmltext += '<td>'+a[i].name+'</td>'
+              htmltext += '<td>'+a[i].rollno+'</td>'
+              htmltext += '<td>'+'<input type = "button" value = "Delete" onclick = "deleteData('+i+')"/>'+'</td>'
+              htmltext += '<td>'+'<input type = "button" value = "Edit"/>'+'</td>'
+              htmltext += '</tr>'
+          }
+          htmltext += '</table>'
+          ans = document.getElementById('dis').innerHTML=htmltext
+      }
+      display();
+      function add(){
+        b = {
+          name : document.getElementById('name').value,
+          rollno : document.getElementById('rollno').value
+        } 
+        a.push(b);
+        display() 
+      }
+
+      function deleteData(i){
+        a.splice(i,0);
+        display()
+      }
+      
+    </script>
+
+  </body>
+</html>
