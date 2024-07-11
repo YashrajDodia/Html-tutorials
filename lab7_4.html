@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        EmployeeBasic = {
+            name : "prem",
+            age : 30,
+            department : "gaming",
+            designation : "game developer"
+        }
+
+        EmployeeContact = {
+            phone : 1234567892,
+            email : "premshah@gmail.com"
+        }
+
+        Employee = {
+            ...EmployeeBasic,
+            ...EmployeeContact
+        }
+
+        console.log(Employee);
+    </script>
+</body>
+</html>
