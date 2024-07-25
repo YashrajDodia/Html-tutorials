@@ -1,13 +1,23 @@
 const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
-const port = 3001;
+const port = 3002;
+const server = http.createServer(function (req, res) {
 
-const server = http.createServer((req,res)=>{
-    res.statusCode = 200;
-    res.setHeader('Content-Type' , 'text/html');
-    res.end("Hello World");
+   if(req.url == "/list"){
+    fs.readFile('crud2.html' , (err,data)=>{
+        if(err){
+            console.log(err);
+        }
+        res.statusCode = 200;
+        res.setHeader('Content-Type' , 'text/html');
+        res.end(data);
+    })
+   }
 });
 
 server.listen(port,()=>{
-    console.log(`Server running at : http://127.0.0.1:${port}/`);
-});
+    console.log(`Server running at : ${port}`);
+})
+  
